@@ -5,7 +5,7 @@ if __name__ == "__main__":
     commands = ["python main.py 1 producer"]
         #          ,"python main.py 2 producer","python main.py 3 producer",
         #         "python main.py 4 producer","python main.py 5 producer","python main.py 6 producer",
-        #         "python main.py 7 producer","python main.py 8 producer"]
+        #          "python main.py 7 producer","python main.py 8 producer"]
     #
     #commands = ["python main.py 1 producer"]
     processList=[]
