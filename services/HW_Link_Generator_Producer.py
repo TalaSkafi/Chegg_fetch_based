@@ -38,6 +38,10 @@ class HW_Link_Generator_Producer:
         for question in questions:
             #Slack().send_message_to_slack("PRODUCER", "Producer made "+str(question_repository.get_produced_count(mysql_db_manager))+" questions waiting for consumer")
             while True:
+                if question_repository.get_produced_count(mysql_db_manager)>20:
+                    print()
+                    continue
+
                 try:
                     homework_id, endpoint, sid = self.getQuestionInformation(driver, question.chegg_id)
 
